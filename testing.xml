@@ -1,0 +1,20 @@
+<suite name="Suite1"  >
+    <listeners>
+        <listener class-name="utlis.ExtentReporterNG"/>
+
+    </listeners>
+    <test name="EndToEnd" >
+        <classes>
+            <class name="apiTests.EndToEndTest" />
+        </classes>
+    </test>
+
+    <test name="Regression">
+        <classes>
+            <class name="apiTests.AuthServiceTests"/>
+            <class name="apiTests.DeleteBookingTests"/>
+            <class name="apiTests.UpdateBookingTests"/>
+            <class name="apiTests.CreateBookingTests"/>
+        </classes>
+    </test>
+</suite>
